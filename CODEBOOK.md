@@ -41,7 +41,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 - 'test/y_test.txt': Test labels.
 
-The following files are available for the train and test data. Their descriptions are equivalent. 
+### The following files are available for the train and test data. Their descriptions are equivalent. 
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
@@ -67,3 +67,13 @@ Use of this dataset in publications must be acknowledged by referencing the foll
 This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
+## run_analysis.R implements the above steps:
+
+* Requires reshape2 library.
+* Load both test and train data
+* Add features and activity labels
+* Merge the datasets
+* Extract the mean and standard deviation per Subject per Activity from the dataset
+* Clean up the data
+* Create a tidy dataset
