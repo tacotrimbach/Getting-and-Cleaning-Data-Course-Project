@@ -68,9 +68,9 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
-## 'run_analysis.R' implements the above steps:
+## `run_analysis.R` implements the above steps:
 
-* Requires 'reshape2' library.
+* Requires `reshape2` library.
 * Load both test and train data
 * Add features and activity labels
 * Merge the datasets
